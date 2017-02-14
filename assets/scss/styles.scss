@@ -1,0 +1,28 @@
+
+/*--------------------------------------------------------------
+Custom styles
+--------------------------------------------------------------*/
+
+.site-branding {
+  margin-bottom: 20px;
+  .site-title {
+    //margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.header-phone {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+  margin: auto;
+
+  text-align: center;
+  a {
+    font-size: 30px;
+    font-weight: bold;
+
+    color: #000;
+  }
+}

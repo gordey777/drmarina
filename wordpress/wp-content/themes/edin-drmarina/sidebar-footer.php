@@ -10,8 +10,10 @@
 
 	<div id="tertiary" class="footer-widget-area" role="complementary">
 		<div class="footer-widget-wrapper clear">
+
 			<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 				<div class="footer-widget">
+
 					<?php dynamic_sidebar( 'sidebar-2' ); ?>
 				</div><!-- .footer-widget -->
 			<?php endif; ?>

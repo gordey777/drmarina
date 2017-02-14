@@ -33,7 +33,7 @@ var paths = {
   styles: {
     src: basePaths.src + 'scss/',
     css: basePaths.src + 'css/',
-    dest: basePaths.dest
+    dest: basePaths.dest + 'css/'
   },
   fonts: {
     src: basePaths.src + 'fonts/**',

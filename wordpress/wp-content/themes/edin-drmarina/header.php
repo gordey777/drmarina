@@ -16,6 +16,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+<link href="<?php echo get_template_directory_uri(); ?>/css/styles.css" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -53,7 +54,13 @@
 						<p class="site-description"><?php echo $description; ?></p>
 					<?php endif;
 				?>
+
+        <div class="header-phone">
+          <a href="tel:+380687438946">+38 (068) 743 89 46</a>
+        </div><!-- /.header-phone -->
 			</div><!-- .site-branding -->
+
+
 
 			<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) ) : ?>
 				<div id="site-navigation" class="header-navigation">
