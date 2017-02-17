@@ -56,7 +56,8 @@
 				?>
 
         <div class="header-phone">
-          <a href="tel:+380687438946">+38 (068) 743 89 46</a>
+          <a href="tel:+380687438946"><i class="fa fa-phone"></i> +38 (068) 743 89 46</a>
+          <p class="phone-description">с 8:00 до 21:00 <br> без выходных</p>
         </div><!-- /.header-phone -->
 			</div><!-- .site-branding -->
 
@@ -99,6 +100,16 @@
 				</div><!-- #site-search -->
 			<?php endif; ?>
 		</div><!-- .header-wrapper -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55332724-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

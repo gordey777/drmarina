@@ -19,19 +19,51 @@ get_header(); ?>
 
 <?php //get_sidebar( 'front-page' ); ?>
 
-<?php $testimonials = edin_get_random_posts( 2, 'jetpack-testimonial' ); ?>
 
-<?php if ( ! empty( $testimonials ) && 0 != get_theme_mod( 'edin_testimonials' ) ) : ?>
-	<div id="front-page-testimonials" class="front-page-testimonials-area">
-		<div class="front-page-testimonials-wrapper clear">
-			<?php
-				foreach ( $testimonials as $testimonial ) : setup_postdata( $GLOBALS['post'] =& $testimonial );
-					get_template_part( 'content', 'testimonial' );
-				endforeach;
-				wp_reset_postdata();
-			?>
-		</div><!-- .front-page-testimonials-wrapper -->
-	</div><!-- #front-page-testimonials -->
-<?php endif; ?>
+  <?php
+    $front_posts = new WP_Query( array(
+      'post_type'      => 'post',
+      'orderby'        => 'date',
+      'order'          => 'ASC',
+
+      'posts_per_page' => 9,
+      'no_found_rows'  => true,
+    ) );
+  ?>
+
+  <?php if ( $front_posts->have_posts() ) : ?>
+
+    <div id="quaternary" class="grid-area">
+      <div class="grid-wrapper clear">
+
+        <?php while ( $front_posts->have_posts() ) : $front_posts->the_post(); ?>
+
+          <div class="grid">
+            <?php get_template_part( 'content', 'grid' ); ?>
+          </div><!-- .grid -->
+
+        <?php endwhile; ?>
+
+      </div><!-- .grid-wrapper -->
+    </div><!-- #quaternary -->
+
+  <?php
+    endif;
+    wp_reset_postdata();
+  ?>
+<?php //$testimonials = edin_get_random_posts( 2, 'jetpack-testimonial' ); ?>
+
+<!-- <?php //if ( ! empty( $testimonials ) && 0 != get_theme_mod( 'edin_testimonials' ) ) : ?>
+  <div id="front-page-testimonials" class="front-page-testimonials-area">
+    <div class="front-page-testimonials-wrapper clear">
+      <?php
+        //foreach ( $testimonials as $testimonial ) : setup_postdata( $GLOBALS['post'] =& $testimonial );
+          //get_template_part( 'content', 'testimonial' );
+        //endforeach;
+        //wp_reset_postdata();
+      ?>
+    </div>.front-page-testimonials-wrapper
+  </div>#front-page-testimonials
+<?php //endif; ?> -->
 
 <?php get_footer(); ?>

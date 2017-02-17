@@ -2,7 +2,7 @@
 /*--------------------------------------------------------------
 Custom styles
 --------------------------------------------------------------*/
-
+@import 'fonts/font_fontawesome';
 .site-branding {
   margin-bottom: 20px;
   .site-title {
@@ -18,11 +18,40 @@ Custom styles
   width: 100%;
   margin: auto;
 
-  text-align: center;
+  text-align: left;
   a {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
 
+    float: none;
+
     color: #000;
+  }
+  p {
+    font-size: 18px;
+    //display: block;
+  }
+}
+
+.site-description {
+  font-size: 18px;
+
+  display: inline-block;
+
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1020px) {
+  .header-phone {
+    position: absolute;
+    top: 36px;
+    right: 165px;
+
+    width: 245px;
+
+    text-align: center;
+  }
+  .site-description {
+    margin-bottom: 0;
   }
 }
