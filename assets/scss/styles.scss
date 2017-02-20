@@ -4,10 +4,11 @@ Custom styles
 --------------------------------------------------------------*/
 @import 'fonts/font_fontawesome';
 .site-branding {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   .site-title {
-    //margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: -15px;
+
+    text-align: left;
   }
 }
 .header-phone {
@@ -25,16 +26,21 @@ Custom styles
 
     float: none;
 
+    margin-bottom: 10px;
+
     color: #000;
+    i {
+      color: #1279be;
+    }
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
     //display: block;
   }
 }
 
 .site-description {
-  font-size: 18px;
+  font-size: 16px;
 
   display: inline-block;
 
@@ -53,5 +59,20 @@ Custom styles
   }
   .site-description {
     margin-bottom: 0;
+  }
+  .site-branding {
+    .site-title {
+      margin-bottom: -15px;
+
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .site-branding {
+    .site-title {
+      margin-bottom: 5px;
+    }
   }
 }
