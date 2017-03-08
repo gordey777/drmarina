@@ -165,6 +165,14 @@ RewriteRule .* http://127.0.0.1 [L]
 #AIOWPS_BLOCK_SPAMBOTS_END
 # END All In One WP Security
 
+
+# BEGIN rlrssslReallySimpleSSL rsssl_version[2.5.7]
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTPS} !=on [NC]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+# END rlrssslReallySimpleSSL
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On

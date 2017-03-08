@@ -1,9 +1,23 @@
 <?php
-define('DB_NAME', 'drmarina');
-define('DB_USER', 'drmarina');
-define('DB_PASSWORD', 'drmarina');
 
-define('DB_HOST', 'localhost');
+//Begin Really Simple SSL JetPack fix
+define( "JETPACK_SIGNATURE__HTTPS_PORT", 80 );
+//END Really Simple SSL
+
+//Begin Really Simple SSL Load balancing fix
+$server_opts = array("HTTP_CLOUDFRONT_FORWARDED_PROTO" => "https", "HTTP_CF_VISITOR"=>"https", "HTTP_X_FORWARDED_PROTO"=>"https", "HTTP_X_FORWARDED_SSL"=>"on");
+foreach( $server_opts as $option => $value ) {
+if ( (isset($_ENV["HTTPS"]) && ( "on" == $_ENV["HTTPS"] )) || (isset( $_SERVER[ $option ] ) && ( strpos( $_SERVER[ $option ], $value ) !== false )) ) {
+$_SERVER[ "HTTPS" ] = "on";
+break;
+}
+}
+//END Really Simple SSL
+define('DB_NAME', 'p284179_beness');
+define('DB_USER', 'p284179_beness');
+define('DB_PASSWORD', '6WxWaZ255x');
+
+define('DB_HOST', 'p284179.mysql.ihc.ru');
 
 define('DISABLE_WP_CRON', true);
 define('FS_METHOD', 'direct');
