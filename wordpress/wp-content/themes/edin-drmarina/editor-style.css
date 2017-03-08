@@ -159,7 +159,7 @@ blockquote {
 	padding-left: 1.5rem;
 	margin: 0 auto 0.7727273em;
 	margin: 0 auto 1.0625rem;
-	border-left: 2px solid #1279be;
+	border-left: 2px solid #15b6b8;
 	font-family: "PT Serif", serif;
 	font-size: 1.375em;
 	line-height: 2.18182em;
@@ -168,7 +168,7 @@ blockquote {
 	padding-right: 1.09091em;
 	padding-right: 1.5rem;
 	padding-left: 0;
-	border-right: 2px solid #1279be;
+	border-right: 2px solid #15b6b8;
 	border-left: 0;
 }
 blockquote blockquote {
@@ -200,7 +200,7 @@ acronym {
 mark,
 ins {
 	padding: 0 0.25em;
-	background: #1279be;
+	background: #15b6b8;
 	color: #fff;
 	text-decoration: none;
 }
@@ -285,7 +285,7 @@ td {
 4.0 - Navigation
 --------------------------------------------------------------*/
 a {
-	color: #1279be;
+	color: #15b6b8;
 	text-decoration: none;
 	border-bottom: 1px solid #f8f8f8;
 }
@@ -293,16 +293,16 @@ a.button,
 a.button-minimal {
 	display: inline-block;
 	padding: 10px 24px;
-	border: 2px solid #1279be;
+	border: 2px solid #15b6b8;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 a.button {
-	background: #1279be;
+	background: #15b6b8;
 	color: #fff;
 }
 a.button-minimal {
-	color: #1279be;
+	color: #15b6b8;
 }
 
 /*--------------------------------------------------------------
