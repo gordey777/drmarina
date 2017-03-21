@@ -56,7 +56,7 @@
 				?>
 
         <div class="header-phone">
-          <a href="tel:+380687438946"><i class="fa fa-phone"></i> +38 (068) 743 89 46</a>
+          <a href="tel:+380674325387"><i class="fa fa-phone"></i> +38 (067) 432 53 87</a>
           <p class="phone-description">с 8:00 до 21:00; без выходных</p>
         </div><!-- /.header-phone -->
 			</div><!-- .site-branding -->
