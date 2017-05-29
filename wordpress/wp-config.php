@@ -13,11 +13,11 @@ break;
 }
 }
 //END Really Simple SSL
-define('DB_NAME', 'p284179_beness');
-define('DB_USER', 'p284179_beness');
-define('DB_PASSWORD', '6WxWaZ255x');
+define('DB_NAME', 'drmarina');
+define('DB_USER', 'user');
+define('DB_PASSWORD', 'user');
 
-define('DB_HOST', 'p284179.mysql.ihc.ru');
+define('DB_HOST', 'localhost');
 
 define('DISABLE_WP_CRON', true);
 define('FS_METHOD', 'direct');

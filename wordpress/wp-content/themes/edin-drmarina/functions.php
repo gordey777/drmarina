@@ -377,3 +377,19 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load plugin enhancement file to display admin notices.
  */
 require get_template_directory() . '/inc/plugin-enhancements.php';
+
+
+//Phone SHORTCODE
+function insert_phone() {
+  $tel_num = get_field('phone', 14);
+  $tes_link = get_field('phone_link', 14);
+
+
+    $html = '<a href="tel:+' . $tes_link . '"><i class="fa fa-phone"></i> ' . $tel_num . '</a>';
+  return $html;
+}
+add_shortcode( 'insert_phone', 'insert_phone' );
+//[insert_phone]
+//включение шорткодов для виджетов start
+add_filter('widget_text', 'do_shortcode');
+

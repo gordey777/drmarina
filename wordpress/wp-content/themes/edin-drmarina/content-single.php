@@ -6,8 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+		<h1 class="entry-title"><?php the_title(); ?>&nbsp;<a href="tel:+<?php the_field('phone_link', 14); ?>"><i class="fa fa-phone"></i> <?php the_field('phone', 14); ?></a>&nbsp;(м. Голосеевская)</h1>
 		<div class="entry-meta">
 			<?php edin_posted_on(); ?>
 		</div><!-- .entry-meta -->

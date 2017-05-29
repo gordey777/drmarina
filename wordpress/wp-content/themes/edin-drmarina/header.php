@@ -56,7 +56,7 @@
 				?>
 
         <div class="header-phone">
-          <a href="tel:+380674325387"><i class="fa fa-phone"></i> +38 (067) 432 53 87</a>
+          <a href="tel:+<?php the_field('phone_link', 14); ?>"><i class="fa fa-phone"></i>&nbsp;<?php the_field('phone', 14); ?></a>
           <p class="phone-description">с 8:00 до 21:00; без выходных</p>
         </div><!-- /.header-phone -->
 			</div><!-- .site-branding -->
@@ -106,8 +106,8 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-55332724-2', 'auto');
-      ga('send', 'pageview');
+	  ga('create', 'UA-94076340-1', 'auto');
+	  ga('send', 'pageview');
 
     </script>
 	</header><!-- #masthead -->
